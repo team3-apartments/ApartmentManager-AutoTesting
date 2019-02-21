@@ -9,7 +9,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/com/qa/IntegrationTests/ApartmentView.feature" )
+@CucumberOptions(features="Features",glue={"com.qa.IntegrationTests"})
 public class TestRunner {
 
 	public static void main(String[] args) {
